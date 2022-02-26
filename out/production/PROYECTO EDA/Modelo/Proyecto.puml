@@ -1,0 +1,28 @@
+@startuml
+hide circle
+class ListaDeTareas{
+ Tarea tarea;
+ eliminarTarea()
+ editarTarea()
+}
+
+class Entrada{
+Tarea nuevaTarea
+añadirTarea()
+}
+
+class AplicacionDeTareas{
+Entrada entrada;
+ListaDeTareas;
+}
+
+class Tarea{
+ + String titulo;
+ + String descripcion;
+}
+
+AplicacionDeTareas --> Entrada
+AplicacionDeTareas --> ListaDeTareas
+ListaDeTareas-->Tarea
+
+@enduml
