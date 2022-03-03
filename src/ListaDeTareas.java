@@ -1,5 +1,3 @@
-package Modelo;
-
 public class ListaDeTareas {
     private Tarea primeraTarea;
 
@@ -7,7 +5,6 @@ public class ListaDeTareas {
         primeraTarea = null;
     }
 
-    // TODO: 25/2/2022 refactorizar despues
     public void añadirTarea(String titulo, String description) {
         if (primeraTarea == null) {
             primeraTarea = new Tarea(titulo, description);
@@ -16,7 +13,6 @@ public class ListaDeTareas {
         Tarea nuevaTarea = new Tarea(titulo, description);
         nuevaTarea.enlazarSiguiente(temp);
         primeraTarea = nuevaTarea;
-
     }
 
     public void eliminarTarea() {
