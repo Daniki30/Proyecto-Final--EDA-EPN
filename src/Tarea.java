@@ -36,9 +36,8 @@ public class Tarea {
 
     @Override
     public String toString() {
-        return "Tarea{" +
-                "informacion=" + Arrays.toString(informacion) +
-                ", siguienteTarea=" + siguienteTarea +
-                '}';
+        return
+                "   Título: "+informacion[0]+", Descripción: "+informacion[1]+
+                "\nSiguienteTarea: \n" + siguienteTarea;
     }
 }
