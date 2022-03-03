@@ -5,7 +5,7 @@ public class ListaDeTareas {
         primeraTarea = null;
     }
 
-    public void añadirTarea(String titulo, String description) {
+    public Object añadirTarea(String titulo, String description) {
         if (primeraTarea == null) {
             primeraTarea = new Tarea(titulo, description);
         }
@@ -13,25 +13,26 @@ public class ListaDeTareas {
         Tarea nuevaTarea = new Tarea(titulo, description);
         nuevaTarea.enlazarSiguiente(temp);
         primeraTarea = nuevaTarea;
+        return null;
     }
 
-    public void eliminarTarea() {
+    public Object eliminarTarea() {
         primeraTarea = primeraTarea.obtenerSiguienteTarea();
+        return null;
     }
 
-    public void editarTarea(int indice, String nuevoTitulo, String nuevaDescription) {
+    public Object editarTarea(int indice, String nuevoTitulo, String nuevaDescription) {
         Tarea temporal = primeraTarea;
-        for (int i = 0; i < indice; i++) {
+        for (int i = 0; i < indice-1; i++) {
             temporal = temporal.obtenerSiguienteTarea();
         }
         temporal.editarValor(nuevoTitulo, nuevaDescription);
-
+        return null;
     }
 
     @Override
     public String toString() {
-        return "ListaDeTareas{" +
-                "primeraTarea=" + primeraTarea +
-                '}';
+        return "********Lista De Tareas********\n" +
+                "Primera tarea: \n" + primeraTarea;
     }
 }
