@@ -26,6 +26,13 @@ IntelliJ IDEA
 4. Buscar archivo y abrir
 5. Correr el programa
 
+Comando para instalar el código desde `GitHub Cli`
+```
+gh repo clone Daniki30/Proyecto-Final--EDA-EPN
+```
+
+[Enlace al código en GitHub](https://github.com/Daniki30/Proyecto-Final--EDA-EPN.git) 
+
 ## Desarrollo
 
 - Clase Aplicación de tareas
