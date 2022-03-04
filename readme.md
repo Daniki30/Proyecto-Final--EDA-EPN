@@ -31,13 +31,14 @@ Comando para instalar el código desde `GitHub Cli`
 gh repo clone Daniki30/Proyecto-Final--EDA-EPN
 ```
 
-[Enlace al código en GitHub](https://github.com/Daniki30/Proyecto-Final--EDA-EPN.git) 
+[Enlace al código en GitHub](https://github.com/YuloDev/Proyecto-Final--EDA-EPN.git) 
 
 ## Desarrollo
 
-- Clase Aplicación de tareas
+- Clase Tarea Enlazable
 - Clase Lista de tareas
 - Clase Tareas
+- Main
 
 ## Funciones
 
